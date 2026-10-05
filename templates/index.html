@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Productivity Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- ===== Navigation Menu ==== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                S
+            </div>
+            <span>StudentHub</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+        </ul>
+
+        <a href="#" class="login-btn">
+            Login
+        </a>
+
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-container">
+
+    <div class="blur-circle circle-1"></div>
+    <div class="blur-circle circle-2"></div>
+    <div class="blur-circle circle-3"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-tag">
+            🚀 Productivity Redefined
+        </p>
+
+        <h1>
+            Organize Your Studies Like Never Before
+        </h1>
+
+        <p class="hero-description">
+
+            Manage assignments, notes, attendance,
+            GPA and study schedule from one place.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#contact" class="primary-btn">
+                Get Started
+            </a>
+
+            <a href="#features" class="secondary-btn">
+                Explore Features
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+    <div class="dashboard-card">
+        <div class="dashboard-header">
+
+        <div>
+
+            <h3>Welcome Back 👋</h3>
+
+            <p>Stay productive today</p>
+
+        </div>
+
+        <span class="status">
+            ● Online
+        </span>
+
+    </div>
+
+    <div class="dashboard-stats">
+
+        <div class="mini-card">
+
+            <p>Current GPA</p>
+
+            <h2>3.82</h2>
+
+        </div>
+
+        <div class="mini-card">
+
+            <p>Attendance</p>
+
+            <h2>92%</h2>
+
+        </div>
+
+        <div class="mini-card">
+
+            <p>Tasks Done</p>
+
+            <h2>18</h2>
+
+        </div>
+
+    </div>
+
+    <div class="progress-box">
+
+        <div class="progress-title">
+
+            <span>Weekly Progress</span>
+
+            <span>82%</span>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+    </div>
+
+    <div class="assignment-box">
+
+        <h4>📚 Next Assignment</h4>
+
+        <p>Object Oriented Programming Project</p>
+
+        <small>Due Tomorrow</small>
+
+    </div>
+
+</div>   
+
+    
+
+    </div>
+    </div>
+    </div>
+</section>
+
+    <!-- ====== TRUST SECTION ===== -->
+
+<section class="trust reveal">
+
+    <div class="container">
+
+        <p class="trust-title">
+            Trusted by students to stay productive
+        </p>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="10000" data-suffix="+">0</h2>
+                <p>Students</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="50000" data-suffix="+">0</h2>
+                <p>Tasks Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="95" data-suffix="%">0</h2>
+                <p>Productivity</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="24" data-suffix="/7">0</h2>
+                <p>Available</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==== FEATURES SECTION ==== -->
+
+<section class="features reveal" id="features">
+
+    <div class="container">
+
+        <p class="section-tag">
+            FEATURES
+        </p>
+
+        <h2 class="section-title">
+            Everything You Need
+        </h2>
+
+        <p class="section-description">
+            Manage your complete student life from one modern dashboard.
+        </p>
+
+        <div class="feature-grid">
+
+            <div class="feature-card reveal" data-delay="0">
+
+                <div class="feature-icon">
+                    <i data-lucide="book-open"></i>
+                </div>
+
+                <h3>Assignment Manager</h3>
+
+                <p>
+                    Organize assignments with deadlines and priority.
+                </p>
+
+            </div>
+
+            <div class="feature-card reveal" data-delay="100">
+
+                <div class="feature-icon">
+                    <i data-lucide="calendar-days"></i>
+                </div>
+
+                <h3>Attendance Tracker</h3>
+
+                <p>
+                    Monitor your attendance percentage easily.
+                </p>
+
+            </div>
+
+            <div class="feature-card reveal" data-delay="200">
+
+                <div class="feature-icon">
+                    <i data-lucide="chart-column"></i>
+                </div>
+
+                <h3>GPA Calculator</h3>
+
+                <p>
+                    Calculate semester and cumulative GPA instantly.
+                </p>
+
+            </div>
+
+            <div class="feature-card reveal" data-delay="300">
+
+                <div class="feature-icon">
+                    <i data-lucide="notebook-pen"></i>
+                </div>
+
+                <h3>Notes</h3>
+
+                <p>
+                    Save your important class notes securely.
+                </p>
+
+            </div>
+
+            <div class="feature-card reveal" data-delay="400">
+
+                <div class="feature-icon">
+                    <i data-lucide="timer"></i>
+                </div>
+
+                <h3>Pomodoro Timer</h3>
+
+                <p>
+                    Stay focused using study sessions and breaks.
+                </p>
+
+            </div>
+
+            <div class="feature-card reveal" data-delay="500">
+
+                <div class="feature-icon">
+                    <i data-lucide="cloud"></i>
+                </div>
+
+                <h3>Cloud Sync</h3>
+
+                <p>
+                    Access your study data anytime, anywhere.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== DASHBOARD SHOWCASE SECTION ===== -->
+
+<section class="dashboard-showcase" id="dashboard">
+
+    <div class="container showcase-container">
+
+        <!-- Left Content -->
+
+        <div class="showcase-content reveal">
+
+            <p class="section-tag">
+                SMART DASHBOARD
+            </p>
+
+            <h2 class="showcase-title">
+                Everything You Need,
+                All in One Place
+            </h2>
+
+            <p class="showcase-description">
+                Stay focused and organized with a powerful dashboard
+                designed to bring your academic life together.
+            </p>
+
+            <div class="showcase-benefits">
+
+                <div class="benefit-item">
+                    <span class="benefit-check">✓</span>
+                    <p>Track your daily tasks</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-check">✓</span>
+                    <p>Monitor academic progress</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-check">✓</span>
+                    <p>Manage your study schedule</p>
+                </div>
+
+            </div>
+
+            <a href="#" class="showcase-btn">
+                Explore Dashboard →
+            </a>
+
+        </div>
+
+
+        <!-- Right Dashboard Preview -->
+
+        <div class="showcase-dashboard reveal" data-delay="200">
+
+            <div class="showcase-dashboard-header">
+
+                <div>
+                    <p class="dashboard-greeting">
+                        Good Evening,
+                    </p>
+
+                    <h3>Student</h3>
+                </div>
+
+                <div class="dashboard-avatar">
+                    S
+                </div>
+
+            </div>
+
+
+            <!-- Progress Card -->
+
+            <div class="showcase-progress-card">
+
+                <div class="progress-card-top">
+
+                    <div>
+                        <p>Weekly Progress</p>
+                        <h3>82%</h3>
+                    </div>
+
+                    <span class="progress-badge">
+                        +12%
+                    </span>
+
+                </div>
+
+                <div class="showcase-progress-bar">
+                    <div class="showcase-progress-fill"></div>
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Cards -->
+
+            <div class="dashboard-bottom-grid">
+
+                <div class="dashboard-small-card">
+
+                    <p>Tasks</p>
+                    <h3>08</h3>
+                    <span>Pending</span>
+
+                </div>
+
+                <div class="dashboard-small-card">
+
+                    <p>Study Time</p>
+                    <h3>4.5h</h3>
+                    <span>Today</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Upcoming Task -->
+
+            <div class="upcoming-task">
+
+                <div class="task-icon">
+                    ✓
+                </div>
+
+                <div class="task-info">
+                    <h4>Complete OOP Assignment</h4>
+                    <p>Due Tomorrow</p>
+                </div>
+
+                <span class="task-status">
+                    High
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== HOW IT WORKS SECTION ===== -->
+
+<section class="how-it-works" id="how-it-works">
+
+    <div class="container">
+
+        <div class="how-it-works-heading reveal">
+
+            <p class="section-tag">
+                HOW IT WORKS
+            </p>
+
+            <h2 class="section-title">
+                Get Started in Three Simple Steps
+            </h2>
+
+            <p class="section-description">
+                StudentHub makes it easy to organize your academic life
+                and stay focused on what matters most.
+            </p>
+
+        </div>
+
+
+        <div class="steps-container">
+
+            <!-- Step 1 -->
+
+            <div class="step-card reveal" data-delay="100">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    👤
+                </div>
+
+                <h3>Create Your Account</h3>
+
+                <p>
+                    Set up your profile and personalize your
+                    StudentHub experience in just a few moments.
+                </p>
+
+            </div>
+
+
+            <!-- Step 2 -->
+
+            <div class="step-card reveal" data-delay="250">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    📚
+                </div>
+
+                <h3>Add Your Academic Tasks</h3>
+
+                <p>
+                    Organize assignments, study schedules,
+                    subjects and important deadlines.
+                </p>
+
+            </div>
+
+
+            <!-- Step 3 -->
+
+            <div class="step-card reveal" data-delay="400">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    🚀
+                </div>
+
+                <h3>Stay Productive</h3>
+
+                <p>
+                    Track your progress, complete tasks and
+                    build better study habits every day.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== TESTIMONIALS SECTION ===== -->
+
+<section class="testimonials" id="feedback">
+
+    <div class="container">
+
+        <div class="testimonials-heading reveal">
+
+            <p class="section-tag">STUDENT FEEDBACK</p>
+
+            <h2 class="section-title">
+                Loved by Students
+            </h2>
+
+            <p class="section-description">
+                See how StudentHub helps students stay organized,
+                focused and productive.
+            </p>
+
+        </div>
+
+        <div class="testimonials-grid">
+
+            <div class="testimonial-card reveal">
+
+                <div class="quote-icon">“</div>
+
+                <p class="testimonial-text">
+                    StudentHub has made managing my assignments and
+                    study schedule much easier. Everything is finally
+                    organized in one place.
+                </p>
+
+                <div class="student-info">
+
+                    <div class="student-avatar">A</div>
+
+                    <div>
+                        <h4>Ali Khan</h4>
+                        <span>Computer Science Student</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="testimonial-card reveal" data-delay="150">
+
+                <div class="quote-icon">“</div>
+
+                <p class="testimonial-text">
+                    I can easily track my tasks and stay on top of
+                    deadlines. The dashboard gives me a clear view
+                    of my academic progress.
+                </p>
+
+                <div class="student-info">
+
+                    <div class="student-avatar">S</div>
+
+                    <div>
+                        <h4>Sarah Ahmed</h4>
+                        <span>Software Engineering Student</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="testimonial-card reveal" data-delay="300">
+
+                <div class="quote-icon">“</div>
+
+                <p class="testimonial-text">
+                    The productivity tools help me stay focused and
+                    build a better study routine every day.
+                </p>
+
+                <div class="student-info">
+
+                    <div class="student-avatar">H</div>
+
+                    <div>
+                        <h4>Hamza Ali</h4>
+                        <span>Business Student</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== CALL TO ACTION SECTION ===== -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <div class="cta-box reveal">
+
+            <div class="cta-content">
+
+                <p class="section-tag">
+                    START TODAY
+                </p>
+
+                <h2>
+                    Ready to Take Control of Your Student Life?
+                </h2>
+
+                <p>
+                    Organize your tasks, track your progress and
+                    build better study habits with StudentHub.
+                </p>
+
+                <a href="#" class="cta-btn">
+                    Get Started Free
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <div class="logo-icon">
+                        S
+                    </div>
+
+                    <span>StudentHub</span>
+
+                </div>
+
+                <p>
+                    Your all-in-one productivity platform
+                    designed to help students stay organized,
+                    focused and productive.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="#">Home</a>
+                <a href="#">Features</a>
+                <a href="#">Dashboard</a>
+                <a href="#">How It Works</a>
+
+            </div>
+
+            <!-- Product -->
+            <div class="footer-column">
+
+                <h3>Product</h3>
+
+                <a href="#">Task Manager</a>
+                <a href="#">Assignments</a>
+                <a href="#">Progress Tracking</a>
+                <a href="#">Study Planner</a>
+
+            </div>
+
+            <!-- Support -->
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <a href="#">Help Center</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 StudentHub. All rights reserved.
+            </p>
+
+            <p>
+                Built for students who want to achieve more.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
